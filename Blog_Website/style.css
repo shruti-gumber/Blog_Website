@@ -1,0 +1,629 @@
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+font-family:Roboto,sans-serif;
+}
+
+body{
+background:#f5f7fa;
+}
+
+/* LINKS */
+
+a{
+text-decoration:none;
+}
+
+/* NAVBAR */
+
+.navigation{
+position:sticky;
+top:0;
+z-index:1000;
+
+display:flex;
+align-items:center;
+
+padding:15px 8%;
+
+background:white;
+
+border-bottom:1px solid #eaeaea;
+
+box-shadow:0 2px 15px rgba(0,0,0,0.1);
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+
+margin-right:auto;
+}
+
+.logo img{
+width:55px;
+height:55px;
+border-radius:50%;
+object-fit:cover;
+}
+
+.logo span{
+font-size:30px;
+font-weight:700;
+color:#1e73be;
+letter-spacing:1px;
+}
+
+.navLinks{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.navigation a{
+color:#333;
+font-weight:500;
+transition:0.3s;
+}
+
+.navigation a:hover{
+color:#1e73be;
+}
+
+/* BUTTON */
+
+.btn{
+background:#1e73be;
+color:white !important;
+padding:12px 25px;
+border-radius:30px;
+display:inline-block;
+font-weight:600;
+border:none;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+background:#155ea0;
+}
+
+/* BANNER */
+
+.banner{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:60px 8%;
+}
+
+.bannerThought{
+width:45%;
+}
+
+.bannerThought h1{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.bannerThought span{
+color:#1e73be;
+}
+
+.bannerThought p{
+line-height:1.7;
+margin-bottom:20px;
+color:#555;
+}
+
+.bannerImg img{
+width:500px;
+border-radius:50%;
+box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* HEADINGS */
+
+.heading{
+text-align:center;
+margin:70px 0 40px;
+font-size:2.3rem;
+color:#333;
+}
+
+/* ABOUT */
+
+.aboutUs{
+display:flex;
+padding:40px;
+align-items:center;
+}
+
+.aboutImg{
+width:40%;
+}
+
+.aboutImg img{
+width:100%;
+border-radius:15px;
+}
+
+.aboutContent{
+width:60%;
+padding:30px;
+}
+
+.aboutContent span{
+font-size:2rem;
+color:#1e73be;
+font-weight:bold;
+}
+
+.aboutContent p{
+line-height:1.8;
+}
+
+/* BLOG CARDS */
+
+.blogsDiv{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+padding:20px;
+}
+
+.individualRecentBlogs{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.individualRecentBlogs:hover{
+transform:translateY(-8px);
+}
+
+.individualRecentBlogs img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.recentBlogContent{
+padding:20px;
+}
+
+.recentBlogContent h4{
+margin-bottom:10px;
+font-size:20px;
+}
+
+.recentBlogContent p{
+margin-bottom:15px;
+color:#555;
+line-height:1.6;
+}
+
+/* FORMS */
+
+.formContainer{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.formContainer form{
+width:400px;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.formContainer h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+.formContainer input,
+.formContainer select,
+.formContainer textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+.formContainer p{
+margin-top:15px;
+text-align:center;
+}
+
+.formContainer a{
+color:#1e73be;
+}
+
+textarea{
+resize:none;
+}
+
+/* BLOG BOX */
+
+.blogBox{
+width:80%;
+margin:25px auto;
+padding:25px;
+background:white;
+border-radius:15px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.blogBox h2{
+color:#1e73be;
+margin-bottom:10px;
+}
+
+.blogBox p{
+line-height:1.7;
+}
+
+.blogBox small{
+color:gray;
+}
+
+.blogBox .btn{
+margin-right:10px;
+margin-top:10px;
+}
+
+.deleteBtn{
+background:red;
+}
+
+/* CONTACT */
+
+.contactUs{
+width:90%;
+margin:50px auto;
+
+display:flex;
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.contactImg{
+width:45%;
+}
+
+.contactImg img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+.contactForm{
+width:55%;
+padding:35px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.contactForm form{
+width:100%;
+}
+
+.contactForm h2{
+margin-bottom:20px;
+color:#1e73be;
+}
+
+.contactInfo{
+display:flex;
+gap:15px;
+margin-bottom:20px;
+}
+
+.infoBox{
+flex:1;
+background:#f8f9fc;
+padding:15px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.infoBox i{
+font-size:22px;
+color:#1e73be;
+margin-bottom:10px;
+}
+
+.infoBox h4{
+margin-bottom:5px;
+}
+
+.infoBox p{
+font-size:13px;
+color:#666;
+}
+
+.contactForm input,
+.contactForm textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:15px;
+}
+
+.contactForm textarea{
+height:120px;
+}
+
+.formBtns{
+display:flex;
+gap:10px;
+margin-top:15px;
+}
+
+/* DARK MODE BUTTON */
+
+.darkBtn{
+position:fixed;
+bottom:20px;
+right:20px;
+padding:12px 20px;
+border:none;
+border-radius:30px;
+background:#1e73be;
+color:white;
+cursor:pointer;
+z-index:1000;
+}
+
+/* DARK MODE */
+
+.dark{
+background:#121212;
+color:white;
+}
+
+.dark .navigation{
+background:#1f1f1f;
+border-bottom:none;
+}
+
+.dark .individualRecentBlogs{
+background:#1f1f1f;
+color:white;
+}
+
+.dark .recentBlogContent p{
+color:#ddd;
+}
+
+.dark .blogBox{
+background:#1f1f1f;
+color:white;
+}
+
+.dark .contactUs{
+background:#1f1f1f;
+}
+
+.dark .infoBox{
+background:#2a2a2a;
+}
+
+.dark .infoBox h4{
+color:white;
+}
+
+.dark .infoBox p{
+color:#ddd;
+}
+
+.dark .contactForm input,
+.dark .contactForm textarea{
+background:#2a2a2a;
+color:white;
+border:none;
+}
+
+.dark .navigation a{
+color:white;
+}
+
+.dark .heading{
+color:white;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.blogsDiv{
+grid-template-columns:repeat(2,1fr);
+}
+
+.banner{
+flex-direction:column;
+gap:40px;
+}
+
+.bannerThought{
+width:100%;
+text-align:center;
+}
+
+.bannerImg img{
+width:350px;
+}
+
+.aboutUs{
+flex-direction:column;
+}
+
+.aboutImg,
+.aboutContent{
+width:100%;
+}
+
+.contactUs{
+flex-direction:column;
+}
+
+.contactImg,
+.contactForm{
+width:100%;
+}
+}
+
+@media(max-width:600px){
+
+.blogsDiv{
+grid-template-columns:1fr;
+}
+
+.navLinks{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.bannerThought h1{
+font-size:2rem;
+}
+
+.logo span{
+font-size:22px;
+}
+}
+
+
+/* ADMIN PANEL */
+
+.adminContainer{
+
+width:90%;
+margin:40px auto;
+}
+
+.adminHeading{
+
+text-align:center;
+font-size:42px;
+color:#1e73be;
+margin-bottom:10px;
+}
+
+.adminSubHeading{
+
+text-align:center;
+color:gray;
+margin-bottom:40px;
+font-size:18px;
+}
+
+.adminBlogCard{
+
+background:white;
+padding:25px;
+margin-bottom:25px;
+border-radius:18px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+
+transition:0.3s;
+
+}
+
+.adminBlogCard:hover{
+
+transform:translateY(-5px);
+}
+
+.adminTop{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+margin-bottom:15px;
+}
+
+.adminTop h2{
+
+color:#1e73be;
+}
+
+.pendingBadge{
+
+background:orange;
+color:white;
+padding:8px 15px;
+border-radius:30px;
+font-size:14px;
+font-weight:bold;
+}
+
+.adminAuthor{
+
+margin-bottom:15px;
+color:#666;
+}
+
+.adminContent{
+
+line-height:1.8;
+margin-bottom:20px;
+}
+
+.adminBtns{
+
+display:flex;
+gap:15px;
+}
+
+.approveBtn{
+
+background:green;
+}
+
+.rejectBtn{
+
+background:red;
+}
+
+.noBlogs{
+
+text-align:center;
+color:gray;
+margin-top:60px;
+}
+
+/* DARK MODE */
+
+.dark .adminBlogCard{
+
+background:#1f1f1f;
+color:white;
+}
+
+.dark .adminAuthor{
+
+color:#ccc;
+}
